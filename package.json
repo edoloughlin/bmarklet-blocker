@@ -1,0 +1,18 @@
+{
+  "name": "bookmarklet-minification",
+  "version": "1.0.0",
+  "description": "Minifies JavaScript files for bookmarklets.",
+  "main": "index.js",
+  "scripts": {
+    "minify:picker": "terser picker.js -o picker.min.js -c -m",
+    "minify:blocker": "terser blocker.js -o blocker.min.js -c -m",
+    "minify:editor": "terser editor.js -o editor.min.js -c -m",
+    "minify:all": "npm run minify:picker && npm run minify:blocker && npm run minify:editor"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "terser": "^5.7.0"
+  }
+}
